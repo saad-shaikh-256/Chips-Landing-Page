@@ -360,6 +360,56 @@ nav {
    }
 }
 
-@media (min-width: 1201px) and (max-width: 1600px) {}
+@media (min-width: 1201px) and (max-width: 1600px) {
+   nav {
+      padding: var(--50px) var(--60px);
 
-@media (min-width: 1601px) {}
+      #link {
+         gap: var(--28px);
+
+         a {
+            font-size: var(--18px);
+         }
+      }
+
+      #search {
+         width: 220px;
+         padding: var(--14px) var(--20px);
+
+         img {
+            width: auto;
+            height: var(--22px);
+         }
+      }
+
+      #menu {
+         display: none;
+      }
+   }
+}
+
+@media (min-width: 1601px) {
+   nav {
+      padding: var(--50px) var(--60px);
+
+      #link {
+         gap: var(--32px);
+
+         a {
+            font-size: var(--18px);
+         }
+      }
+
+      #search {
+         width: 250px;
+         gap: var(--8px);
+         padding: var(--16px) var(--24px);
+         font-size: var(--20px);
+
+      }
+
+      #menu {
+         display: none;
+      }
+   }
+}
