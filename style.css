@@ -227,9 +227,139 @@ nav {
       font-size: var(--20px);
       font-family: var(--Font-Medium);
       cursor: pointer;
+      overflow: hidden;
+
+      input {
+         all: unset;
+      }
    }
 
    #menu {
       display: none;
    }
 }
+
+@media only screen and (max-width: 480px) {
+   nav {
+      padding: var(--40px) var(--24px);
+
+      #logo img {
+         width: auto;
+         height: var(--40px);
+      }
+
+      #link {
+         display: none;
+      }
+
+      #search {
+         display: none;
+      }
+
+      #menu {
+         display: block;
+      }
+   }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+   nav {
+      padding: var(--40px) var(--24px);
+
+      #link {
+         display: none;
+      }
+
+      #search {
+         display: none;
+      }
+
+      #menu {
+         display: block;
+      }
+   }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+   nav {
+      padding: var(--50px) var(--40px);
+
+      #link {
+         display: none;
+      }
+
+      #search {
+         display: none;
+      }
+
+      #menu {
+         display: block;
+      }
+   }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+   nav {
+      padding: var(--50px) var(--60px);
+
+      #link {
+         gap: var(--24px);
+
+         a {
+            font-size: var(--16px);
+         }
+      }
+
+      #search {
+         width: 160px;
+         gap: var(--8px);
+         border: 2px solid var(--Neutral900-color);
+         padding: var(--12px) var(--16px);
+         font-size: var(--16px);
+
+         img {
+            width: auto;
+            height: var(--20px);
+         }
+      }
+
+      #menu {
+         display: none;
+      }
+   }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+   nav {
+      padding: var(--50px) var(--60px);
+
+      #link {
+         gap: var(--28px);
+
+         a {
+            font-size: var(--16px);
+         }
+      }
+
+      #search {
+         width: 180px;
+         gap: var(--8px);
+         border: 2px solid var(--Neutral900-color);
+         padding: var(--12px) var(--16px);
+         font-size: var(--16px);
+
+         img {
+            width: auto;
+            height: var(--20px);
+         }
+      }
+
+      #menu {
+         display: none;
+      }
+   }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {}
+
+@media (min-width: 1601px) {}
